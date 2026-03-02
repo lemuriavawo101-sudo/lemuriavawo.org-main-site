@@ -3,27 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Star, Calendar, ArrowRight } from 'lucide-react';
-
-interface EventData {
-    id: number;
-    day: string;
-    month: string;
-    year: string;
-    date: string;
-    type: string;
-    title: string;
-    subtitle: string;
-    location: string;
-    focus: string;
-    description: string;
-    wisdomSummary: string;
-    tag: string;
-    color: string;
-    accent: string;
-    image: string;
-    number: string;
-    placement: string;
-}
+import { EventData } from '@/types/event';
 
 interface EventSpotlightProps {
     event: EventData | null;

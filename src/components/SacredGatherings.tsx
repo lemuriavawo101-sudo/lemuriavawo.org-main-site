@@ -3,11 +3,10 @@
 import React, { useRef } from 'react';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { EVENTS } from '@/lib/constants';
+import { EventData } from '@/types/event';
 import Link from 'next/link';
 
-
-
-function EventCard({ event, index }: { event: any; index: number }) {
+function EventCard({ event, index }: { event: EventData; index: number }) {
     const ref = useRef<HTMLDivElement>(null);
     const inView = useInView(ref, { once: true, margin: '-60px' });
     const isEven = event.placement ? event.placement === 'left' : index % 2 === 0;

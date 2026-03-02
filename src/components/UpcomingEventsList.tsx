@@ -3,27 +3,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { MapPin, Star, Calendar, ArrowRight } from 'lucide-react';
-
-interface EventData {
-    id: number;
-    day: string;
-    month: string;
-    year: string;
-    date: string;
-    type: string;
-    title: string;
-    subtitle: string;
-    location: string;
-    focus: string;
-    description: string;
-    wisdomSummary: string;
-    tag: string;
-    color: string;
-    accent: string;
-    image: string;
-    number: string;
-    placement: string;
-}
+import { EventData } from '@/types/event';
 
 interface UpcomingEventsListProps {
     events: EventData[];
@@ -33,7 +13,7 @@ interface UpcomingEventsListProps {
 }
 
 function UpcomingEventCard({ event, index, isSelected, onSelect, onRegister }: {
-    event: any; index: number; isSelected: boolean; onSelect: () => void; onRegister: () => void;
+    event: EventData; index: number; isSelected: boolean; onSelect: () => void; onRegister: () => void;
 }) {
     const ref = useRef<HTMLDivElement>(null);
     const inView = useInView(ref, { once: true, margin: '-40px' });

@@ -8,14 +8,13 @@ import EventSpotlight from '@/components/EventSpotlight';
 import UpcomingEventsList from '@/components/UpcomingEventsList';
 import EventMemories from '@/components/EventMemories';
 import EventRegistrationForm from '@/components/EventRegistrationForm';
-
-type EventType = typeof EVENTS[number];
+import { EventData } from '@/types/event';
 
 interface EventsPageClientProps {
-    upcomingEvents: EventType[];
-    pastEvents: EventType[];
+    upcomingEvents: EventData[];
+    pastEvents: EventData[];
     eventDates: string[];
-    initialSpotlightEvent: EventType | null;
+    initialSpotlightEvent: EventData | null;
     initialDaysRemaining: number | null;
 }
 
@@ -80,17 +79,17 @@ export default function EventsPageClient({
     const [selectedDate, setSelectedDate] = useState<string | null>(
         initialSpotlightEvent?.date ?? null
     );
-    const [spotlightEvent, setSpotlightEvent] = useState<EventType | null>(
+    const [spotlightEvent, setSpotlightEvent] = useState<EventData | null>(
         initialSpotlightEvent
     );
     const [daysRemaining, setDaysRemaining] = useState<number | null>(
         initialDaysRemaining
     );
     const [isRegistering, setIsRegistering] = useState(false);
-    const [registrationEvent, setRegistrationEvent] = useState<EventType | null>(null);
+    const [registrationEvent, setRegistrationEvent] = useState<EventData | null>(null);
     const spotlightRef = useRef<HTMLDivElement>(null);
 
-    const openRegistration = (event: EventType) => {
+    const openRegistration = (event: EventData) => {
         setRegistrationEvent(event);
         setIsRegistering(true);
     };
@@ -101,7 +100,7 @@ export default function EventsPageClient({
     };
 
     // Shared logic to select an event for spotlight
-    const selectEvent = (event: EventType) => {
+    const selectEvent = (event: EventData) => {
         setSelectedDate(event.date);
         setSpotlightEvent(event);
 
