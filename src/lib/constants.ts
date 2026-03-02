@@ -1,7 +1,6 @@
-// WARNING: This file is managed by the seeding system. 
-// To update data, edit the JSON files in /src/lib/seeds/ and run: npm run seed
+import { EventData } from '../types/event';
 
-export const EVENTS = [
+export const EVENTS: EventData[] = [
     {
         "id": 0,
         "day": "21",
