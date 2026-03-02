@@ -22,6 +22,7 @@ interface EventData {
     accent: string;
     image: string;
     number: string;
+    placement: string;
 }
 
 interface EventSpotlightProps {
