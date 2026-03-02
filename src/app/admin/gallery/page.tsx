@@ -20,7 +20,6 @@ import {
     Maximize2,
     Camera
 } from 'lucide-react';
-import { GALLERY_IMAGES } from '@/lib/constants';
 
 export default function AdminGalleryPage() {
     const { images, addImage, deleteImage, updateImage, restoreSeeds, isLoaded } = useGallery();

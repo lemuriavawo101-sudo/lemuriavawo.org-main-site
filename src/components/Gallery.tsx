@@ -7,12 +7,19 @@ import Link from 'next/link';
 import { useGallery } from '@/hooks/useGallery';
 import { X, Maximize2, Camera, Sparkles, ArrowRight } from 'lucide-react';
 
-export default function Gallery({ limit, initialImages = [] }: { limit?: number, initialImages?: any[] }) {
-    const { images, isLoaded } = useGallery(initialImages);
+export default function Gallery({ limit, initialImages }: { limit?: number, initialImages?: any[] }) {
+    const { images: hookImages, isLoaded } = useGallery();
+    const images = initialImages || hookImages;
     const [selectedImage, setSelectedImage] = useState<any>(null);
     const [filter, setFilter] = useState('ALL');
 
-    const displayImages = isLoaded ? images : initialImages;
+    if (!isLoaded) return (
+        <div className="min-h-[400px] flex items-center justify-center">
+            <div className="w-12 h-12 border-4 border-ancient-amber/30 border-t-ancient-amber rounded-full animate-spin" />
+        </div>
+    );
+
+    const displayImages = images;
 
     const categories = ['ALL', ...Array.from(new Set(displayImages.map(img => img.category)))];
 

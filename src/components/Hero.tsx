@@ -1,12 +1,13 @@
 'use client';
 
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useTransition } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
 import { Search, Menu, Zap, Heart, Shield, ArrowRight, Calendar, ChevronDown } from 'lucide-react';
 import dynamic from 'next/dynamic';
 import { useScrollToTop } from '@/hooks/useScrollToTop';
+import { getGurus } from '@/lib/actions/data';
 
 const CulturalModel = dynamic(() => import('./CulturalModel'), { ssr: false });
 
@@ -70,6 +71,17 @@ const GuruCard = ({ image, name, role, index }: { image: string, name: string, r
 );
 
 export default function Hero() {
+    const [gurus, setGurus] = useState<any[]>([]);
+    const [isPending, startTransition] = useTransition();
+
+    useEffect(() => {
+        async function loadGurus() {
+            const data = await getGurus();
+            setGurus(data as any[]);
+        }
+        loadGurus();
+    }, []);
+
     const containerRef = useRef<HTMLDivElement>(null);
     const mouseX = useMotionValue(0);
     const mouseY = useMotionValue(0);
@@ -262,9 +274,15 @@ export default function Hero() {
                             <p className="text-[10px] text-charcoal-deep/40 font-bold uppercase tracking-widest">Learning from the ancient lineages</p>
                         </div>
                         <div className="flex flex-wrap justify-center gap-12 md:gap-20">
-                            <GuruCard image="/assets/practitioner_1_light.png" name="V. Ramanan" role="Senior Mentor" index={0} />
-                            <GuruCard image="/assets/practitioner_1_light.png" name="K. Shiva" role="Combat Head" index={1} />
-                            <GuruCard image="/assets/practitioner_1_light.png" name="M. Arul" role="Varmam Specialist" index={2} />
+                            {gurus.map((guru, index) => (
+                                <GuruCard
+                                    key={guru.name}
+                                    image={guru.image}
+                                    name={guru.name}
+                                    role={guru.role}
+                                    index={index}
+                                />
+                            ))}
                         </div>
                     </div>
                 </motion.div>
