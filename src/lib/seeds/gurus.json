@@ -1,0 +1,20 @@
+[
+    {
+        "name": "V. Ramanan",
+        "role": "Senior Mentor",
+        "bio": "A 5th generation practitioner specialized in 'Nokku Varmam' (The Art of Focus). Dedicated to preserving ancient Tamil traditions.",
+        "image": "/assets/guru_1.png"
+    },
+    {
+        "name": "K. Shiva",
+        "role": "Combat Head",
+        "bio": "Transmitting a legacy of discipline, healing, and silent power through the most lethal Varma switches.",
+        "image": "/assets/guru_2.png"
+    },
+    {
+        "name": "M. Arul",
+        "role": "Varmam Specialist",
+        "bio": "Mastering the restorative side of the science, resetting the body's internal clock through point-stimulation.",
+        "image": "/assets/guru_3.png"
+    }
+]

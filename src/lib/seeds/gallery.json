@@ -1,0 +1,44 @@
+[
+    {
+        "id": "gal-1",
+        "title": "Adimurai Dawn Practice",
+        "category": "Training",
+        "image": "/assets/adimurai_practitioner.png",
+        "color": "#FFB100"
+    },
+    {
+        "id": "gal-2",
+        "title": "Traditional Weapons Flow",
+        "category": "Syllabus",
+        "image": "/assets/mallakhamb_practitioner.png",
+        "color": "#FF2D55"
+    },
+    {
+        "id": "gal-3",
+        "title": "Nokku Varmam Focus",
+        "category": "Legacy",
+        "image": "/assets/guru_1.png",
+        "color": "#B8860B"
+    },
+    {
+        "id": "gal-4",
+        "title": "Sacred Transmission",
+        "category": "Gathering",
+        "image": "/event-warriors.png",
+        "color": "#D4AF37"
+    },
+    {
+        "id": "gal-5",
+        "title": "Coastal Healing",
+        "category": "Transmission",
+        "image": "/event-sunrise.png",
+        "color": "#8B7355"
+    },
+    {
+        "id": "gal-6",
+        "title": "The 108 Points",
+        "category": "Syllabus",
+        "image": "/event-healing.png",
+        "color": "#C9A96E"
+    }
+]

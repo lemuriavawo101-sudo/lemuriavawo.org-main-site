@@ -1,0 +1,35 @@
+[
+    {
+        "id": "beginner-varma",
+        "title": "Beginner Varma Foundations",
+        "subtitle": "The 12 Vital Switches",
+        "description": "Master the fundamental points of the upper body. Focus on self-defense application and daily vitality resets.",
+        "duration": "12 Weeks",
+        "schedule": "Tue & Thu | 6:30 PM",
+        "level": "Entry Level",
+        "image": "/assets/adimurai_practitioner.png",
+        "color": "#D4AF37"
+    },
+    {
+        "id": "advanced-healing",
+        "title": "Advanced Varma Vaidyam",
+        "subtitle": "The Science of Restoration",
+        "description": "A deep dive into the healing side of Varmakalai. Learn to treat nervous system disorders and chronic pain.",
+        "duration": "24 Weeks",
+        "schedule": "Mon & Wed | 7:00 PM",
+        "level": "Intermediate",
+        "image": "/assets/guru_1.png",
+        "color": "#FF2D55"
+    },
+    {
+        "id": "weapons-mastery",
+        "title": "Traditional Weapons Flow",
+        "subtitle": "The Extension of Prana",
+        "description": "Master the Silambam and short stick techniques integrated with Varma point targeting.",
+        "duration": "16 Weeks",
+        "schedule": "Sat | 8:00 AM",
+        "level": "Advanced",
+        "image": "/assets/mallakhamb_practitioner.png",
+        "color": "#B8860B"
+    }
+]

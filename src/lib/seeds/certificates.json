@@ -1,0 +1,16 @@
+[
+    {
+        "id": "foundation-cert",
+        "title": "Certified Varma Practitioner (CVP)",
+        "description": "Recognition of mastery over the basic 108 points and their safety protocols.",
+        "prerequisite": "Completion of 1-year basic syllabus",
+        "duration": "Final Examination"
+    },
+    {
+        "id": "healer-cert",
+        "title": "Master Varma Healer (MVH)",
+        "description": "Specialization in Varma Vaidyam and restorative neurological therapy.",
+        "prerequisite": "CVP + 2 years clinical practice",
+        "duration": "Thesis + Oral Defense"
+    }
+]

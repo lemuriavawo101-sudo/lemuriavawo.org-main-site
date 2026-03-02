@@ -1,0 +1,32 @@
+[
+    {
+        "id": "lead_001",
+        "type": "ASSOCIATION",
+        "name": "Ramesh Kumar",
+        "email": "ramesh@example.com",
+        "phone": "+91 98765 43210",
+        "details": "Interested in preserving ancient Tamil traditions. 5 years of Silambam experience.",
+        "status": "NEW",
+        "timestamp": "2026-03-02T05:10:00Z"
+    },
+    {
+        "id": "lead_002",
+        "type": "SEAT_APPLICATION",
+        "name": "Ananya Sharma",
+        "email": "ananya@example.com",
+        "phone": "+91 98221 11000",
+        "details": "Applying for Beginner foundations. Preferred morning batch. No medical history.",
+        "status": "CONTACTED",
+        "timestamp": "2026-03-01T15:30:00Z"
+    },
+    {
+        "id": "lead_003",
+        "type": "CAMP_REGISTRATION",
+        "name": "David Wilson",
+        "email": "david.w@example.com",
+        "phone": "+1 415 555 0123",
+        "details": "Mountain Shadow Immersion. Needs accommodation. Traveling from San Francisco.",
+        "status": "NEW",
+        "timestamp": "2026-03-02T02:45:00Z"
+    }
+]

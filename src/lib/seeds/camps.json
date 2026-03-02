@@ -1,0 +1,22 @@
+[
+    {
+        "id": "mountain-immersion",
+        "title": "Mountain Shadow Immersion",
+        "location": "Western Ghats Sanctuary",
+        "date": "August 15 - 20, 2026",
+        "description": "5 days of silent practice, dawn Varma training, and nocturnal sensory awakening in the deep forest.",
+        "tag": "RESIDENTIAL",
+        "image": "/event-warriors.png",
+        "color": "#8B7355"
+    },
+    {
+        "id": "coastal-retreat",
+        "title": "Coastal Flow Retreat",
+        "location": "Kanyakumari Shores",
+        "date": "November 10 - 15, 2026",
+        "description": "Harnessing the water element to master fluid motion and restorative coastal healing practices.",
+        "tag": "RETREAT",
+        "image": "/event-sunrise.png",
+        "color": "#D4AF37"
+    }
+]

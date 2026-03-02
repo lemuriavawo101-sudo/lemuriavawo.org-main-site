@@ -1,0 +1,20 @@
+[
+    {
+        "id": "7aqrl2ven",
+        "student_name": "John Doe",
+        "la_number": "LA-1234",
+        "university_id": "TPM440123",
+        "issue_date": "20-01-2024",
+        "course_title": "Varma Foundation",
+        "certificate_url": "https://link-to-pdf.com"
+    },
+    {
+        "id": "304tjhidv",
+        "student_name": "reshanth",
+        "la_number": "LA-8888",
+        "university_id": "",
+        "issue_date": "16-10-2023",
+        "course_title": "Adimurai",
+        "certificate_url": "/uploads/1772389131196-8899_copy.png"
+    }
+]
